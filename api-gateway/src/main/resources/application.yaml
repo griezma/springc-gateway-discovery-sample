@@ -1,0 +1,5 @@
+spring.cloud.gateway.routes:
+  - id: hello-service-route
+    uri: lb://hello-service
+    predicates:
+      - Path=/hello,/hello/*
