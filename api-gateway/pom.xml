@@ -11,9 +11,9 @@
     </parent>
 
     <groupId>griezma.springc.gateway</groupId>
-    <artifactId>springc-gateway-sample</artifactId>
+    <artifactId>api-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springc-gateway-sample</name>
+    <name>api-gateway</name>
 
     <properties>
         <java.version>11</java.version>
