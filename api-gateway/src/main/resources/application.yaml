@@ -3,3 +3,10 @@ spring.cloud.gateway.routes:
     uri: lb://hello-service
     predicates:
       - Path=/hello,/hello/*
+  - id: nolb-hello-service-route
+    uri: http://localhost:8080
+    predicates:
+      - Path=/nolb/hello,/nolb/hello/*
+    filters:
+      - RewritePath=/nolb/(.*), /$1
+
